@@ -22,7 +22,7 @@ DATA[:img_num] = 0
 DATA[:offset]  = 0
 
 opensea_api_key = ENV["OPENSEA_API_KEY"]
-raise "OpenSeaAPIKeyNotProvidedError - please run the command with the OPENSEA_API_KEY=xxx specifying your OpenSea API key - this process doesn't work anymore without it." if !opensea_api_key || opensea_api_key == ""
+raise "OpenSeaAPIKeyNotProvidedError - please run the command with the OPENSEA_API_KEY=xxx specifying your OpenSea API key" if !opensea_api_key || opensea_api_key == ""
 OPENSEA_API_KEY = opensea_api_key
 
 OPENSEA_API_HEADERS = {
